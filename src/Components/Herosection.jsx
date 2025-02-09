@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import
+import Firstvideo from '../assets/Images/Firstvideo.mp4';
 
 const HeroSection = () => {
   return (
     <div className="relative w-screen h-screen flex flex-col items-center justify-center text-white px-6">
       {/* Background Video */}
       <video autoPlay loop muted className="absolute top-0 left-0 w-screen h-screen object-cover">
-        <source src="" type="video/mp4" />
+        <source src="Firstvideo.mp4" type="video/mp4" />
       </video>
       
       {/* Overlay */}
