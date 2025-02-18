@@ -1,31 +1,27 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Navbar from './Components/Navbar';
 import HeroSection from './Components/Herosection';
-import MarketingPage from './Components/MarketingPage';
+import Marketingpage from './Components/Marketingpage'; 
 import Story from './Components/Story';
-import GetInTouch from './Components/GetInTouch';
-import TeamSection from './Components/TeamSection';
-import Footer from './Components/Footer';
+import Getintouch from './Components/Getintouch';
+import TeamSection from './Components/Teamsection';
+import Services from './Components/Services'; 
 import './index.css';
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<>
-            <HeroSection />
-            <MarketingPage />
-            <Story />
-            <GetInTouch />
-            <TeamSection />
-            <Footer />
-          </>} />
-          <Route path="/services" element={<Services />} />
-        </Routes>
-      </div>
+    <Router> 
+      <Navbar />
+      <Routes>
+        <Route path="/services" element={<Services />} /> {/* Services page */}
+      </Routes>
+
+      <HeroSection />
+      <Marketingpage />
+      <Story />
+      <Getintouch />
+      <TeamSection />
     </Router>
   );
 };
