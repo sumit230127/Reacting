@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Firstvideo from '../assets/'
+import Firstvideo from "../Images/Firstvideo.mp4"
 
 const HeroSection = () => {
   return (
     <div className="relative w-screen h-screen flex flex-col items-center justify-center text-white px-6">
       {/* Background Video */}
       <video autoPlay loop muted className="absolute top-0 left-0 w-screen h-screen object-cover">
-        <source src="" type="video/mp4" />
+        <source src={Firstvideo} type="video/mp4" />
       </video>
       
       {/* Overlay */}
@@ -62,22 +62,22 @@ const HeroSection = () => {
           ))}
         </motion.h2>
         <motion.p 
-  className="mt-4 text-lg"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 1, delay: 1 }}
->
-  {"We are passionate about Google!".split("").map((char, index) => (
-    <motion.span 
-      key={index} 
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.05 }}
-    >
-      {char}
-    </motion.span>
-  ))}
-</motion.p>
+          className="mt-4 text-lg"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          {"We are passionate about Google!".split("").map((char, index) => (
+            <motion.span 
+              key={index} 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.05 }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </motion.p>
       </div>
       
       {/* Form */}
