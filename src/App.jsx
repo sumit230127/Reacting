@@ -7,7 +7,6 @@ import Story from './Components/Story';
 import GetInTouch from './Components/GetInTouch';
 import TeamSection from './Components/TeamSection';
 import Footer from './Components/Footer';
-import Services from './Services';
 import './index.css';
 
 const App = () => {
