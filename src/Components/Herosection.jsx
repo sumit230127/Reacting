@@ -13,18 +13,6 @@ const HeroSection = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       
-      {/* Navbar */}
-      <nav className="absolute top-0 left-0 w-full flex justify-between items-center p-6 text-white z-10">
-        <div className="text-2xl font-bold text-yellow-500">smart<span className="text-white">sites</span></div>
-        <div className="hidden md:flex space-x-6">
-          <a href="#" className="hover:underline">Services</a>
-          <a href="#" className="hover:underline">Our Work</a>
-          <a href="#" className="hover:underline">Company</a>
-          <a href="#" className="hover:underline">Contact</a>
-        </div>
-        <div className="text-yellow-500 font-bold">201-870-6000</div>
-      </nav>
-      
       {/* Hero Content */}
       <div className="text-center mt-20 z-10">
         <motion.h1 

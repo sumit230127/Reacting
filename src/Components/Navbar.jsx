@@ -1,16 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="bg-yellow-500 text-black p-3 fixed top-0 w-full z-50">
-      <div className="container mx-auto">
-        <h1 className="text-xs text-center font-small">
-          Join our 2025 Marketing Predictions Webinar on 24/7
-        </h1>
-        <p className="text-xs text-center mt-1">
-          <strong>WARNING:</strong> Scammers are using the SmartSites brand name. Do not get scammed. 
-          <a href="#" className="underline ml-1">Read More</a>
-        </p>
+    <nav className="bg-yellow-400 text-white py-4 px-6">
+      <div className="flex items-center justify-between">
+        {/* Logo Section */}
+        <div className="flex items-center">
+          <img src="/logo.png" alt="Logo" className="h-10" />
+        </div>
+
+        {/* Navigation Links */}
+        <div className="flex space-x-8 ml-10">
+          <Link to="/services">Services</Link>
+          <Link to="/our-work">Our Work</Link>
+          <Link to="/team">Team</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
       </div>
     </nav>
   );
