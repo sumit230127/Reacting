@@ -1,27 +1,45 @@
 import React from "react";
+import Storyvideo from "../Images/Storyvideo.mp4";
+
+// Importing logos
+import Logo1 from "../Images/logo1.png";
+import Logo2 from "../Images/logo2.png";
+import Logo3 from "../Images/logo3.png";
+import Logo4 from "../Images/logo4.png";
+import Logo5 from "../Images/logo5.png";
+
+const logos = [Logo1, Logo2, Logo3, Logo4, Logo5];
 
 const StoryPage = () => {
   return (
-    <div className="w-screen h-screen flex flex-col md:flex-row items-center justify-center px-6">
-      {/* Video Section */}
-      <div className="w-full md:w-1/2 h-64 md:h-full flex items-center justify-center">
-        <video autoPlay loop muted className="w-full h-full object-cover">
-          <source src="/path-to-your-video.mp4" type="video/mp4" />
-        </video>
+    <div className="w-screen min-h-screen flex flex-col items-center justify-between px-6 pb-10">
+      {/* Main Content */}
+      <div className="w-full flex flex-col md:flex-row items-center justify-center py-10 md:py-20">
+        {/* Video Section */}
+        <div className="w-full md:w-1/2 flex items-center justify-center">
+          <video autoPlay loop muted className="w-full md:w-4/5 h-full object-cover rounded-lg shadow-lg">
+            <source src={Storyvideo} type="video/mp4" />
+          </video>
+        </div>
+
+        {/* Text Section */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center p-6 text-black">
+          <h2 className="text-4xl font-bold mb-4">Our Story</h2>
+          <p className="text-lg mb-4">
+            SiteSence was founded by a team of passionate innovators dedicated to transforming the digital landscape.
+            With a vision for excellence and a commitment to innovation, SiteSence has rapidly grown into a leading name in digital solutions.
+          </p>
+          <p className="text-lg">
+            Join us as we continue to push the boundaries of creativity and technology, shaping the future with every step we take.
+          </p>
+        </div>
       </div>
-      
-      {/* Story Section */}
-      <div className="w-full md:w-1/2 h-full flex flex-col justify-center p-6 bg-gray-100 text-black">
-        <h2 className="text-4xl font-bold mb-4">Our Story</h2>
-        <p className="text-lg mb-4">
-          Welcome to our journey! We started with a vision to innovate and bring meaningful solutions
-          to the digital world. Over the years, we have grown into a team of passionate professionals
-          dedicated to delivering excellence in every project.
-        </p>
-        <p className="text-lg">
-          Join us as we continue to push the boundaries of creativity and technology, shaping the future
-          with every step we take.
-        </p>
+
+      {/* Logos Section */}
+      <div className="w-full flex justify-center items-center flex-wrap gap-6 py-6 border-t">
+        {logos.map((Logo, index) => (
+          <img key={index} src={logo} alt={`Logo ${index + 1}`} className="h-12 md:h-16 object-contain" />
+        ))}
       </div>
     </div>
   );

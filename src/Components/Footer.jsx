@@ -1,4 +1,13 @@
 import React from "react";
+import google from'../Images/googlepartner.png';
+import Microsoft from'../Images/microsoftpartner.png';
+import inc500 from'../Images/inc500.png';
+import meta from '../Images/meta.png';
+import hosport from '../Images/HubSpot.png';
+import amazon from '../Images/amazon-Ads.png';
+
+
+
 
 const Footer = () => {
   return (
@@ -58,24 +67,24 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-wrap justify-center space-x-4 mt-8">
-        <img src="/inc5000.png" alt="Inc 5000" className="h-10" />
-        <img src="/google-partner.png" alt="Google Partner" className="h-10" />
-        <img src="/microsoft-partner.png" alt="Microsoft Partner" className="h-10" />
-        <img src="/meta.png" alt="Meta Business Partner" className="h-10" />
-        <img src="/hubspot.png" alt="HubSpot Partner" className="h-10" />
-        <img src="/bbb-rating.png" alt="BBB A+ Rating" className="h-10" />
-        <img src="/amazon-ads.png" alt="Amazon Ads Partner" className="h-10" />
-        <img src="/klaviyo.png" alt="Klaviyo Partner" className="h-10" />
+        <img src={inc500} alt="Inc 5000" className="h-10" />
+        <img src={google} alt="Google Partner" className="h-10" />
+        <img src= {Microsoft} alt="Microsoft Partner" className="h-10" />
+        <img src={meta} alt="Meta Business Partner" className="h-10" />
+        <img src={hosport} alt="HubSpot Partner" className="h-10" />
+        <img src='https://www.amst.com/user/blogs/35870/imghero-f.png?t=1718395912' alt="BBB A+ Rating" className="h-10" />
+        <img src={amazon} alt="Amazon Ads Partner" className="h-10" />
+        <img src='https://logovtor.com/wp-content/uploads/2021/08/klaviyo-logo-vector.png' alt="Klaviyo Partner" className="h-10" />
       </div>
 
       <div className="mt-6 border-t border-gray-500 pt-4 text-center">
         <div className="flex justify-center space-x-4 mb-4">
           <span className="text-xl font-bold text-yellow-500">site<span className="text-white">sence</span></span>
           <div className="flex space-x-2">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="/facebook-icon.png" alt="Facebook" className="h-6" /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="/x-icon.png" alt="Twitter/X" className="h-6" /></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><img src="/youtube-icon.png" alt="YouTube" className="h-6" /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="/linkedin-icon.png" alt="LinkedIn" className="h-6" /></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="https://logos-world.net/wp-content/uploads/2020/05/Facebook-Logo-500x281.png" alt="Facebook" className="h-6" /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="https://logos-world.net/wp-content/uploads/2023/08/X-Logo-500x281.png" alt="Twitter/X" className="h-6" /></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><img src="https://logos-world.net/wp-content/uploads/2020/05/Black-YouTube-logo.png" alt="YouTube" className="h-6" /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo-700x394.png" alt="LinkedIn" className="h-6" /></a>
           </div>
         </div>
         <p className="text-sm">Privacy Policy © 2011-2025 All Rights Reserved.</p>

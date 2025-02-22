@@ -6,7 +6,8 @@ import Marketingpage from './Components/Marketingpage';
 import Story from './Components/Story';
 import Getintouch from './Components/Getintouch';
 import TeamSection from './Components/Teamsection';
-import Services from './Components/Services'; 
+import Services from './Components/Services';
+import Footer from './Components/Footer';
 import './index.css';
 
 const App = () => {
@@ -14,14 +15,14 @@ const App = () => {
     <Router> 
       <Navbar />
       <Routes>
-        <Route path="/services" element={<Services />} /> {/* Services page */}
+        <Route path="/services" element={<Services />} />
       </Routes>
-
       <HeroSection />
       <Marketingpage />
       <Story />
       <Getintouch />
       <TeamSection />
+      <Footer />
     </Router>
   );
 };

@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Firstvideo from "../Images/Firstvideo.mp4";
+import google from'../Images/googlepartner.png';
+import inc500 from'../Images/inc500.png';
+import meta from '../Images/meta.png';
+import amazon from '../Images/amazon-Ads.png';
 
 const HeroSection = () => {
   return (
@@ -9,19 +13,17 @@ const HeroSection = () => {
       <video autoPlay loop muted className="absolute top-0 left-0 w-screen h-screen object-cover">
         <source src={Firstvideo} type="video/mp4" />
       </video>
+      <div className="relative inset-0 bg-black bg-opacity-50"></div>
       
       
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      
-      
-      <div className="text-center mt-20 z-10 px-4">
+      <div className="text-center mb-2.5 z-10 text-black px-4">
         <motion.h1 
           className="text-3xl sm:text-4xl md:text-5xl font-bold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          {"Award Winning".split("").map((char, index) => (
+          {"Award-Winning".split("").map((char, index) => (
             <motion.span 
               key={index} 
               initial={{ opacity: 0, y: 20 }}
@@ -50,7 +52,7 @@ const HeroSection = () => {
           ))}
         </motion.h2>
         <motion.p 
-          className="mt-4 text-lg sm:text-xl"
+          className="mt-4 text-xl sm:text-xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
@@ -69,7 +71,7 @@ const HeroSection = () => {
       </div>
       
       {/* Form */}
-      <div className="bg-black bg-opacity-70 p-4 rounded-lg flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6 z-10 w-full max-w-4xl">
+      <div className="bg-black bg-opacity-70 p-2 rounded-lg flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-80 z-10 w-full">
         <input type="text" placeholder="Full Name" className="p-2 bg-transparent border rounded-md text-white placeholder-gray-400 w-full" />
         <input type="email" placeholder="Email Address" className="p-2 bg-transparent border rounded-md text-white placeholder-gray-400 w-full" />
         <input type="text" placeholder="Phone Number" className="p-2 bg-transparent border rounded-md text-white placeholder-gray-400 w-full" />
@@ -78,10 +80,10 @@ const HeroSection = () => {
       
       
       <div className="flex flex-wrap justify-center space-x-4 mt-8 z-10 w-full max-w-4xl">
-        <img src="/inc5000.png" alt="Inc 5000" className="h-12" />
-        <img src="/google-partner.png" alt="Google Partner" className="h-12" />
-        <img src="/meta.png" alt="Meta Business Partner" className="h-12" />
-        <img src="/amazon-ads.png" alt="Amazon Ads Partner" className="h-12" />
+        <img src={inc500} alt="Inc 5000" className="h-12" />
+        <img src={google} alt="Google Partner" className="h-12" />
+        <img src={meta} alt="Meta Business Partner" className="h-12" />
+        <img src={amazon} alt="Amazon Ads Partner" className="h-12" />
       </div>
       
       

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Service = () => {
   const services = [
     { title: 'Android Development', imgSrc: img1 },
