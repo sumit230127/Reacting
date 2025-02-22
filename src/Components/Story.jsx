@@ -1,14 +1,13 @@
 import React from "react";
 import Storyvideo from "../Images/Storyvideo.mp4";
 
-// Importing logos
-import Logo1 from "../Images/logo1.png";
-import Logo2 from "../Images/logo2.png";
-import Logo3 from "../Images/logo3.png";
-import Logo4 from "../Images/logo4.png";
-import Logo5 from "../Images/logo5.png";
+import Logo1 from "../Images/Logo1.png";
+import Logo2 from "../Images/Logo2.png";
+import Logo3 from "../Images/Logo3.png";
+import Logo4 from "../Images/Logo4.png";
+import Logo5 from "../Images/Logo5.png";
 
-const logos = [Logo1, Logo2, Logo3, Logo4, Logo5];
+const Logos = [Logo1, Logo2, Logo3, Logo4, Logo5];
 
 const StoryPage = () => {
   return (
@@ -37,8 +36,8 @@ const StoryPage = () => {
 
       {/* Logos Section */}
       <div className="w-full flex justify-center items-center flex-wrap gap-6 py-6 border-t">
-        {logos.map((Logo, index) => (
-          <img key={index} src={logo} alt={`Logo ${index + 1}`} className="h-12 md:h-16 object-contain" />
+        {Logos.map((Logo, index) => (
+          <img key={index} src={Logo} alt={`Logo ${index + 1}`} className="h-12 md:h-16 object-contain" />
         ))}
       </div>
     </div>
