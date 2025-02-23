@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import team1 from "../Images/Team1.jpeg";
+import team1 from "../Images/Team11.jpeg";
 import team2 from "../Images/Team2.jpeg";
 import team3 from "../Images/Team3.jpeg";
 import client1 from "../Images/client1.jpeg";
