@@ -1,11 +1,10 @@
 import React from "react";
 import Storyvideo from "../Images/Storyvideo.mp4";
-
-import Logo1 from "../Images/Logo1.png";
-import Logo2 from "../Images/Logo2.png";
-import Logo3 from "../Images/Logo3.png";
-import Logo4 from "../Images/Logo4.png";
-import Logo5 from "../Images/Logo5.png";
+import Logo1 from "../Images/Logo1.svg";
+import Logo2 from "../Images/Logo2.svg";
+import Logo3 from "../Images/Logo3.svg";
+import Logo4 from "../Images/Logo4.svg";
+import Logo5 from "../Images/Logo5.svg";
 
 const Logos = [Logo1, Logo2, Logo3, Logo4, Logo5];
 
@@ -34,10 +33,16 @@ const StoryPage = () => {
         </div>
       </div>
 
-      {/* Logos Section */}
-      <div className="w-full flex justify-center items-center flex-wrap gap-6 py-6 border-t">
+      {/* Logos Section - Evenly Spaced & Color Changing */}
+      <div className="w-full flex justify-center items-center gap-x-10 py-6 border-t flex-wrap">
         {Logos.map((Logo, index) => (
-          <img key={index} src={Logo} alt={`Logo ${index + 1}`} className="h-12 md:h-16 object-contain" />
+          <div key={index} className="group transition duration-500 ease-in-out">
+            <img
+              src={Logo}
+              alt={`Logo ${index + 1}`}
+              className="w-auto h-10 md:h-14 object-contain transition-all duration-500 group-hover:opacity-50"
+            />
+          </div>
         ))}
       </div>
     </div>

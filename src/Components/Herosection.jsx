@@ -8,7 +8,7 @@ import amazon from '../Images/amazon-Ads.png';
 
 const HeroSection = () => {
   return (
-    <div className="relative w-screen h-screen flex flex-col items-center justify-center text-white px-6">
+    <div className="relative w-screen h-screen flex flex-col items-center justify-center text-white px-6 mt-10">
       
       <video autoPlay loop muted className="absolute top-0 left-0 w-screen h-screen object-cover">
         <source src={Firstvideo} type="video/mp4" />

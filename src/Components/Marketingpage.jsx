@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Firstvideo from "../Images/Firstvideo.mp4";
 import Letter from "../Images/letter.png";
-
-// Importing the images for services
 import WebDesignIcon from "../Images/web-design.png";
 import EmailMarketingIcon from "../Images/email-marketing.png";
 import SEOIcon from "../Images/seo.png";
