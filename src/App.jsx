@@ -8,23 +8,32 @@ import Getintouch from './Components/Getintouch';
 import TeamSection from './Components/Teamsection';
 import Services from './Components/Services';
 import Footer from './Components/Footer';
-import About from './Components/About';  // Importing About page
+
 import './index.css';
 
 const App = () => {
   return (
     <Router> 
       <Navbar />
-      <Routes>
-        <Route path="/services" element={<Services />} />
-        <Route path="/about" element={<About />} /> 
-      </Routes>
-      <HeroSection />
-      <Marketingpage />
-      <Story />
-      <Getintouch />
-      <TeamSection />
-      <Footer />
+      <div className="w-full">
+        <Routes>
+          {/* Homepage Route */}
+          <Route 
+            path="/" 
+            element={
+              <>
+                <HeroSection />
+                <Marketingpage />
+                <Story />
+                <Getintouch />
+                <TeamSection />
+                <Footer />
+              </>
+            } 
+          />
+          <Route path="/services" element={<Services />} /> {/* ✅ Fixed path */}
+        </Routes>
+      </div>
     </Router>
   );
 };

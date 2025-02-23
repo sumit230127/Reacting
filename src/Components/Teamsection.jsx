@@ -1,5 +1,5 @@
 import React from "react";
-import Team from '../Images/team.jpg';
+import Team1 from '../Images/Team1.jpg';
 
 const TeamSection = () => {
   return (
@@ -15,7 +15,7 @@ const TeamSection = () => {
       
       <div className="w-full md:w-1/2 flex items-center justify-center">
         <img 
-          src={Team} 
+          src={Team1} 
           alt="Team" 
           className="w-full h-auto rounded-lg shadow-lg"
         />
