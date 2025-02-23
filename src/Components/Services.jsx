@@ -6,9 +6,9 @@ import img4 from "../Images/img4.jpeg";
 import img5 from "../Images/img5.jpeg";
 import img6 from "../Images/img6.jpeg";
 import contentImg from "../Images/img6.jpeg"; // Replace with actual image
-import heroImage from "../Images/hero-image.jpeg"; // Replace with actual image
-import googlePartner from "../Images/google-partner.png";
-import metaPartner from "../Images/meta-partner.jpeg";
+import heroImage from "../Images/Hero-image.jpeg"; // Replace with actual image
+import googlePartner from "../Images/Google-partener.jpeg";
+import MetaLogo from "../Images/MetaLogo.jpeg";
 import amazonAds from "../Images/amazon-ads.png";
 import hubspot from "../Images/hubspot.png";
 
@@ -35,7 +35,7 @@ const Service = () => {
           </p>
           <div className="flex space-x-4 mt-4">
             <img src={googlePartner} alt="Google Partner" className="h-10" />
-            <img src={metaPartner} alt="Meta Partner" className="h-10" />
+            <img src={MetaLogo} alt="Meta Partner" className="h-10" />
             <img src={amazonAds} alt="Amazon Ads" className="h-10" />
             <img src={hubspot} alt="HubSpot" className="h-10" />
           </div>
