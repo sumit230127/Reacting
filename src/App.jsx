@@ -8,6 +8,7 @@ import Getintouch from './Components/Getintouch';
 import TeamSection from './Components/Teamsection';
 import Services from './Components/Services';
 import Footer from './Components/Footer';
+import About from './Components/About';  // Importing About page
 import './index.css';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} /> 
       </Routes>
       <HeroSection />
       <Marketingpage />
