@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import team1 from "../Images/team1.jpg";
-import team2 from "../Images/team2.jpg";
-import team3 from "../Images/team3.jpg";
-import client1 from "../Images/client1.png";
-import client2 from "../Images/client2.png";
-import client3 from "../Images/client3.png";
-import client4 from "../Images/client4.png";
+import team1 from "../Images/Team1.jpeg";
+import team2 from "../Images/Team2.jpeg";
+import team3 from "../Images/Team3.jpeg";
+import client1 from "../Images/client1.jpeg";
+import client2 from "../Images/client2.jpeg";
+import client3 from "../Images/client3.jpeg";
+import client4 from "../Images/client4.jpeg";
 
 const AboutPage = () => {
   return (
