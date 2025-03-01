@@ -105,34 +105,104 @@ const Service = () => {
       </div>
 
       {/* Website Design Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between p-10 bg-white">
-        <div className="md:w-1/2">
-          <div className="flex items-center space-x-2">
-            <img src={logo} alt="Logo" className="w-6 h-6" />
-            <a href="your-link-here" className="text-blue-900 font-semibold hover:underline">
-              Results-Driven Website Design
-            </a>
-          </div>
-          <div className="text-4xl font-bold mt-4">
-            Get a beautiful website that wins customers.
-          </div>
-          <div className="mt-4">
-            Elevate your business with a trusted website that your customers will love. Our award-winning website designers will represent your brand in the best possible way. Your website will load extremely fast and look great on all devices.
-          </div>
-          <div className="mt-6 flex items-center">
-            <div className="text-green-700 text-5xl font-bold">900+</div>
-            <div className="ml-2">
-              Successful websites launched by our team since 2011
-            </div>
-          </div>
-        </div>
-        <div className="md:w-1/2 flex justify-end">
-          <div className="w-3/4">
-            <img src={Webdevelopment} alt="Website Designs" className="w-full h-auto shadow-lg rounded-lg" />
-          </div>
+      <div className="flex flex-col md:flex-row items-center justify-between py-20 px-10 bg-white min-h-[800px]">
+  {/* Left Section */}
+  <div className="md:w-1/2">
+    <div className="flex items-center space-x-2">
+      <img src={logo} alt="Logo" className="w-6 h-6" />
+      <a href="your-link-here" className="text-blue-900 font-semibold hover:underline">
+        Results-Driven Website Design
+      </a>
+    </div>
+    <div className="text-4xl font-bold mt-6">
+      Get a beautiful website that wins customers.
+    </div>
+    <div className="mt-6 text-lg">
+      Elevate your business with a trusted website that your customers will love. Our award-winning website designers will represent your brand in the best possible way. Your website will load extremely fast and look great on all devices.
+    </div>
+    <div className="mt-10 flex items-center">
+      <div className="text-green-700 text-5xl font-bold">900+</div>
+      <div className="ml-3 text-lg">
+        Successful websites launched by our team since 2011
+      </div>
+    </div>
+  </div>
+
+  {/* Right Section */}
+  <div className="md:w-1/2 flex justify-end">
+    <div className="w-full h-[600px]"> 
+      <img 
+        src={Webdevelopment} 
+        alt="Website Designs" 
+        className="w-full h-full object-cover shadow-lg rounded-lg"
+      />
+    </div>
+  </div>
+</div>
+
+      <div className="bg-gray-100 py-24 px-6 lg:px-20 flex flex-col lg:flex-row items-center min-h-[600px]">
+  {/* Left Side: Progress Bars */}
+  <div className="w-full lg:w-1/2 space-y-10">
+    {/* SmartSites Performance */}
+    <div>
+      <p className="text-gray-800 font-semibold text-lg uppercase">SMARTSITES PERFORMANCE</p>
+      <div className="relative mt-3 bg-gray-300 rounded-full h-10 w-full">
+        <div className="bg-yellow-400 h-10 rounded-full" style={{ width: "99%" }}></div>
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white border-4 border-yellow-400 rounded-full w-16 h-16 flex items-center justify-center">
+          <span className="text-black font-semibold text-lg">99%</span>
         </div>
       </div>
-      
+    </div>
+
+    {/* BestCompany Overall */}
+    <div>
+      <p className="text-gray-800 font-semibold text-lg uppercase">BESTCOMPANY™ OVERALL</p>
+      <div className="relative mt-3 bg-gray-300 rounded-full h-10 w-full">
+        <div className="bg-blue-500 h-10 rounded-full" style={{ width: "83%" }}></div>
+        <div className="absolute right-1/4 top-1/2 transform -translate-y-1/2 bg-white border-4 border-blue-500 rounded-full w-16 h-16 flex items-center justify-center">
+          <span className="text-black font-semibold text-lg">83%</span>
+        </div>
+      </div>
+    </div>
+
+    {/* BestCompany Minimum */}
+    <div>
+      <p className="text-gray-800 font-semibold text-lg uppercase">BESTCOMPANY™ MINIMUM</p>
+      <div className="relative mt-3 bg-gray-300 rounded-full h-10 w-full">
+        <div className="bg-gray-600 h-10 rounded-full" style={{ width: "40%" }}></div>
+        <div className="absolute left-1/3 top-1/2 transform -translate-y-1/2 bg-white border-4 border-gray-600 rounded-full w-16 h-16 flex items-center justify-center">
+          <span className="text-black font-semibold text-lg">40%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Right Side: Marketing Content */}
+  <div className="w-full lg:w-1/2 lg:pl-20 mt-14 lg:mt-0">
+    <h4 className="text-blue-700 font-semibold text-xl flex items-center">
+      <span className="mr-2">📊</span> Certified Pay-Per-Click Advertising
+    </h4>
+    <h2 className="text-gray-900 font-bold text-4xl mt-3">
+      Improve your ROI with Scalable PPC marketing.
+    </h2>
+    <p className="text-gray-600 mt-6 text-lg">
+      SmartSites is rated in the top 1% of digital marketing agencies.
+      Blending performance with exceptional customer service, our PPC
+      specialists are some of the best in the industry with a track record
+      for growing successful businesses.
+    </p>
+
+    {/* Partner Logos */}
+    <div className="flex flex-wrap mt-8 space-x-6">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Partner" className="h-16"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_logo_%282012%29.svg" alt="Microsoft Partner" className="h-16"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Facebook_f_logo_%282019%29.svg" alt="Meta Partner" className="h-16"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Partner" className="h-16"/>
+    </div>
+  </div>
+</div>
+
+
 
       {/* Footer Section */}
       <Footer />
