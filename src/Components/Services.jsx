@@ -5,14 +5,14 @@ import img3 from "../Images/img3.jpeg";
 import img4 from "../Images/img4.jpeg";
 import img5 from "../Images/img5.jpeg";
 import img6 from "../Images/img6.jpeg";
-import contentImg from "../Images/img6.jpeg";
 import heroImage from "../Images/Hero-image.jpeg";
 import googlePartner from "../Images/Google-partener.jpeg";
 import MetaLogo from "../Images/MetaLogo.jpeg";
 import amazonAds from "../Images/amazon-ads.png";
 import hubspot from "../Images/hubspot.png";
 import websitebuildingvideo from "../Images/websitebuildingvideo.mp4";
-
+import Whychooseus from "../Images/Whychooseus.jpeg";
+import Webdevelopment from "../Images/webdevelopment.jpeg";
 
 const Service = () => {
   const services = [
@@ -27,42 +27,33 @@ const Service = () => {
   return (
     <div className="w-full min-h-screen bg-gray-100 text-gray-900">
       {/* Hero Section */}
-      <div className="relative text-black py-20 px-10 flex flex-col md:flex-row items-center">
-  <div className="md:w-1/2 space-y-4">
-    <h2 className="text-6xl font-bold mr-20 text-black">
-      Use the best digital marketing services available to outsmart the competition.
-    </h2>
-    <p className="text-lg mr-30">
-      Get more traffic. Acquire more customers. Sell more. We offer proven strategies & reliable execution to exceed your marketing goals.
-    </p>
-    <div className="flex mr-20 space-x-4 mt-4">
-      <img src={googlePartner} alt="Google Partner" className="h-10" />
-      <img src={MetaLogo} alt="Meta Partner" className="h-10" />
-      <img src={amazonAds} alt="Amazon Ads" className="h-10" />
-      <img src={hubspot} alt="HubSpot" className="h-10" />
-    </div>
-  </div>
-  <div className="md:w-1/2 mt-6 md:mt-0">
-    <img src={heroImage} alt="Marketing Analytics" className="w-full h-auto rounded-full" />
-  </div>
-</div>
-
+      <div className="flex flex-col md:flex-row items-center py-20 px-10 md:px-20">
+        <div className="md:w-1/2 space-y-6">
+          <h2 className="text-5xl font-bold text-black">
+            Use the best digital marketing services available to outsmart the competition.
+          </h2>
+          <p className="text-lg">
+            Get more traffic. Acquire more customers. Sell more. We offer proven strategies & reliable execution to exceed your marketing goals.
+          </p>
+          <div className="flex space-x-4 mt-4">
+            <img src={googlePartner} alt="Google Partner" className="h-10" />
+            <img src={MetaLogo} alt="Meta Partner" className="h-10" />
+            <img src={amazonAds} alt="Amazon Ads" className="h-10" />
+            <img src={hubspot} alt="HubSpot" className="h-10" />
+          </div>
+        </div>
+        <div className="md:w-1/2 mt-6 md:mt-0">
+          <img src={heroImage} alt="Marketing Analytics" className="w-full h-auto rounded-lg" />
+        </div>
+      </div>
 
       {/* Services Section */}
       <h1 className="text-center text-4xl font-bold mt-10 mb-10">Our Services</h1>
-
-      <div className="w-full px-10 md:px-16 lg:px-24">
+      <div className="px-10 md:px-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300"
-            >
-              <img
-                src={service.imgSrc}
-                alt={service.title}
-                className="w-full h-60 object-cover"
-              />
+            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform">
+              <img src={service.imgSrc} alt={service.title} className="w-full h-60 object-cover" />
               <div className="p-4 text-center">
                 <h2 className="text-xl font-bold">{service.title}</h2>
               </div>
@@ -71,51 +62,70 @@ const Service = () => {
         </div>
       </div>
 
-      {/* Image-Text Section Below Cards */}
-      <div className="w-full px-10 md:px-16 lg:px-24 mt-20">
-        <div className="flex flex-col md:flex-row items-center  overflow-hidden">
-          {/* Left Side: Image */}
-          <div className="w-full md:w-1/2">
-  <img src={contentImg} alt="About Our Services" className="w-full h-full object-cover rounded-md" />
-</div>
+      {/* Why Choose Us Section */}
+      <div className="flex flex-col md:flex-row items-center px-10 md:px-20 mt-20">
+        <div className="md:w-1/2">
+          <img src={Whychooseus} alt="Why Choose Us" className="w-full rounded-lg" />
+        </div>
+        <div className="md:w-1/2 p-6 space-y-4 text-right">
+          <h2 className="text-3xl font-bold">Why Choose Our Services?</h2>
+          <p className="text-lg text-gray-700">
+            We offer expert solutions tailored to your business needs. Whether it's <strong>Android Development, Web Design, Business Analytics, or Digital Marketing</strong>, we ensure top-notch quality and innovation in every project.
+          </p>
+          <ul className="space-y-2">
+            <li>✅ <strong>Proven industry experience</strong></li>
+            <li>✅ <strong>Cutting-edge technology and tools</strong></li>
+            <li>✅ <strong>100% client satisfaction guarantee</strong></li>
+          </ul>
+        </div>
+      </div>
 
-
-          {/* Right Side: Content */}
-          <div className="w-full md:w-1/2 p-6">
-            <h2 className="text-3xl font-bold ml-50 mb-4">Why Choose Our Services?</h2>
-            <p className="text-lg ml-50 text-gray-700">
-              We offer expert solutions tailored to your business needs. Whether it's 
-              <strong>Android Development, Web Design, Business Analytics, or Digital Marketing</strong>, 
-              we ensure top-notch quality and innovation in every project.
-            </p>
-            <ul className="mt-4 ml-50 space-y-2">
-              <li className="flex items-center">✅ <strong>Proven industry experience</strong></li>
-              <li className="flex items-center">✅ <strong>Cutting-edge technology and tools</strong></li>
-              <li className="flex items-center">✅ <strong>100% client satisfaction guarantee</strong></li>
-            </ul>
+      {/* Video Section */}
+      <div className="flex flex-col md:flex-row items-center py-20 px-10 md:px-20">
+        <div className="md:w-1/2">
+          <video src={websitebuildingvideo} autoPlay muted loop playsInline className="w-full rounded-lg" />
+        </div>
+        <div className="md:w-1/2 space-y-6 text-right">
+          <h2 className="text-5xl font-bold mr-20">Transform Your Vision into a Stunning Online Reality</h2>
+          <p className="text-lg mr-20">
+            Your website is your digital storefront. With our creative design and technical expertise, we turn your vision into an engaging and responsive online experience that captivates your audience and drives results.
+          </p>
+          <div className="flex space-x-4 justify-end mr-20">
+            <img src={googlePartner} alt="Google Partner" className="h-10" />
+            <img src={MetaLogo} alt="Meta Partner" className="h-10" />
+            <img src={amazonAds} alt="Amazon Ads" className="h-10" />
+            <img src={hubspot} alt="HubSpot" className="h-10" />
           </div>
         </div>
       </div>
-      <div className="relative text-black py-20 px-10 flex flex-col md:flex-row items-center">
-      <div className="md:w-1/2 rounded-b-sm mt-6 md:mt-0">
-  <video src={websitebuildingvideo} autoPlay muted loop playsInline className="w-full h-auto rounded-md" />
-</div>
-
-
-  <div className="md:w-1/2 space-y-4">
-    <h2 className="text-6xl ml-20 font-bold text-black">
-    "Transform Your Vision into a Stunning Online Reality"
-    </h2>
-    <p className="text-lg ml-20">
-    "Your website is your digital storefront. With our creative design and technical expertise, we turn your vision into an engaging and responsive online experience that captivates your audience and drives results.".
-    </p>
-    <div className="flex space-x-4 ml-20 mt-4">
-      <img src={googlePartner} alt="Google Partner" className="h-10" />
-      <img src={MetaLogo} alt="Meta Partner" className="h-10" />
-      <img src={amazonAds} alt="Amazon Ads" className="h-10" />
-      <img src={hubspot} alt="HubSpot" className="h-10" />
+      <div class="flex items-center justify-between p-10 bg-white">
+    <div class="w-1/2">
+        <div class="flex items-center space-x-2">
+            <div class="w-6 h-6">
+              
+            </div>
+            <div class="text-blue-900 font-semibold">Results-Driven Website Design</div>
+        </div>
+        <div class="text-4xl font-bold text-gray-800 mt-4">
+            Get a beautiful website that wins customers.
+        </div>
+        <div class="text-gray-600 mt-4">
+            Elevate your business with a trusted website that your customers will love. Our 
+            award-winning website designers will represent your brand in the best possible way. 
+            Your website will load extremely fast and look great on all devices.
+        </div>
+        <div class="mt-6 flex items-center">
+            <div class="text-green-700 text-5xl font-bold">900+</div>
+            <div class="ml-2 text-gray-700">
+                Successful websites launched by our team since 2011
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="w-1/2 flex justify-end">
+        <div class="w-3/4">
+            <img src="Webdevelopment.jpeg" alt="Website Designs" class="w-full h-auto shadow-lg rounded-lg">
+        </div>
+    </div>
 </div>
 
     </div>
