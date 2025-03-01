@@ -13,6 +13,7 @@ import hubspot from "../Images/hubspot.png";
 import websitebuildingvideo from "../Images/websitebuildingvideo.mp4";
 import Whychooseus from "../Images/Whychooseus.jpeg";
 import Webdevelopment from "../Images/webdevelopment.jpeg";
+import logoIcon from "../Images/logo.jpeg"; // Replace with actual logo path
 
 const Service = () => {
   const services = [
@@ -98,36 +99,36 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-between p-10 bg-white">
-    <div class="w-1/2">
-        <div class="flex items-center space-x-2">
-            <div class="w-6 h-6">
-              
-            </div>
-            <div class="text-blue-900 font-semibold">Results-Driven Website Design</div>
-        </div>
-        <div class="text-4xl font-bold text-gray-800 mt-4">
-            Get a beautiful website that wins customers.
-        </div>
-        <div class="text-gray-600 mt-4">
-            Elevate your business with a trusted website that your customers will love. Our 
-            award-winning website designers will represent your brand in the best possible way. 
-            Your website will load extremely fast and look great on all devices.
-        </div>
-        <div class="mt-6 flex items-center">
-            <div class="text-green-700 text-5xl font-bold">900+</div>
-            <div class="ml-2 text-gray-700">
-                Successful websites launched by our team since 2011
-            </div>
-        </div>
-    </div>
-    <div class="w-1/2 flex justify-end">
-        <div class="w-3/4">
-            <img src="Webdevelopment.jpeg" alt="Website Designs" class="w-full h-auto shadow-lg rounded-lg">
-        </div>
-    </div>
-</div>
 
+      {/* Website Design Section */}
+      <div className="flex items-center justify-between p-10 bg-white">
+        <div className="w-1/2">
+          <div className="flex items-center space-x-2">
+            {/* Logo Image before the hyperlink */}
+            <img src={logo.jpeg} alt="Logo" className="w-6 h-6" />
+            <a href="your-link-here" className="text-blue-900 font-semibold hover:underline">
+              Results-Driven Website Design
+            </a>
+          </div>
+          <div className="text-4xl font-bold text-gray-800 mt-4">
+            Get a beautiful website that wins customers.
+          </div>
+          <div className="text-gray-600 mt-4">
+            Elevate your business with a trusted website that your customers will love. Our award-winning website designers will represent your brand in the best possible way. Your website will load extremely fast and look great on all devices.
+          </div>
+          <div className="mt-6 flex items-center">
+            <div className="text-green-700 text-5xl font-bold">900+</div>
+            <div className="ml-2 text-gray-700">
+              Successful websites launched by our team since 2011
+            </div>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-end">
+          <div className="w-3/4">
+            <img src={Webdevelopment} alt="Website Designs" className="w-full h-auto shadow-lg rounded-lg" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
