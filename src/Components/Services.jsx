@@ -11,6 +11,7 @@ import googlePartner from "../Images/Google-partener.jpeg";
 import MetaLogo from "../Images/MetaLogo.jpeg";
 import amazonAds from "../Images/amazon-ads.png";
 import hubspot from "../Images/hubspot.png";
+import websitebuildingvideo from "../Images/websitebuildingvideo.mp4"
 
 const Service = () => {
   const services = [
@@ -95,9 +96,11 @@ const Service = () => {
         </div>
       </div>
       <div className="relative text-black py-20 px-10 flex flex-col md:flex-row items-center">
-  <div className="md:w-1/2 rounded-b-sm mt-6 md:mt-0">
-    <img src={heroImage} alt="Marketing Analytics" className="w-full h-auto" />
-  </div>
+      <div className="md:w-1/2 rounded-b-sm mt-6 md:mt-0">
+  <video src={websitebuildingvideo} autoPlay muted loop playsInline className="w-full h-auto rounded-md" />
+</div>
+
+
   <div className="md:w-1/2 space-y-4">
     <h2 className="text-6xl ml-20 font-bold text-black">
     "Transform Your Vision into a Stunning Online Reality"
