@@ -11,7 +11,8 @@ import googlePartner from "../Images/Google-partener.jpeg";
 import MetaLogo from "../Images/MetaLogo.jpeg";
 import amazonAds from "../Images/amazon-ads.png";
 import hubspot from "../Images/hubspot.png";
-import websitebuildingvideo from "../Images/websitebuildingvideo.mp4"
+import websitebuildingvideo from "../Images/websitebuildingvideo.mp4";
+
 
 const Service = () => {
   const services = [
