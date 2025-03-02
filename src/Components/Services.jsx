@@ -16,6 +16,7 @@ import Webdevelopment from "../Images/webdevelopment.jpeg";
 import logo from "../Images/logo.jpeg"; // Replace with actual logo path
 import Footer from "../Components/Footer"; // Importing Footer
 
+
 const Service = () => {
   const services = [
     { title: "Android Development", imgSrc: img1 },
@@ -68,9 +69,9 @@ const Service = () => {
       <div className="flex flex-col md:flex-row items-center px-10 md:px-20 mt-20">
         {/* Text First */}
         <div className="md:w-1/2 p-6">
-          <h2 className="text-3xl font-bold">Why Choose Our Services?</h2>
+          <h2 className="text-5xl font-bold">Why Choose Our Services?</h2>
           <p className="text-lg">
-            We offer expert solutions tailored to your business needs. Whether it's <strong>Android Development, Web Design, Business Analytics, or Digital Marketing</strong>, we ensure top-notch quality and innovation in every project.
+          Choosing our services means choosing excellence, innovation, and a commitment to your satisfaction. Our team of dedicated professionals works tirelessly to ensure that every project we undertake exceeds your expectations. With years of industry experience, state-of-the-art technology, and a customer-centric approach, we are uniquely positioned to provide solutions that are not only effective but also tailored to your specific needs. We pride ourselves on our reliability, transparency, and unwavering dedication to quality. When you choose us, you are choosing a partner who will go above and beyond to help you achieve your goals and drive your success.
           </p>
           <ul className="space-y-2">
             <li>✅ <strong>Proven industry experience</strong></li>
@@ -114,10 +115,10 @@ const Service = () => {
         Results-Driven Website Design
       </a>
     </div>
-    <div className="text-4xl font-bold mt-6">
+    <div className="text-5xl font-bold mt-6">
       Get a beautiful website that wins customers.
     </div>
-    <div className="mt-6 text-lg">
+    <div className="mt-6 text-lg mr-10">
       Elevate your business with a trusted website that your customers will love. Our award-winning website designers will represent your brand in the best possible way. Your website will load extremely fast and look great on all devices.
     </div>
     <div className="mt-10 flex items-center">
@@ -201,6 +202,54 @@ const Service = () => {
     </div>
   </div>
 </div>
+
+<div className="flex flex-col md:flex-row items-center justify-between bg-white p-12 min-h-[600px]">
+  {/* Left Section */}
+  <div className="md:w-1/2 text-left space-y-6">
+    <div className="flex items-center space-x-3">
+      <svg
+        className="w-8 h-8 text-blue-600"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M8 16l-4-4m0 0l4-4m-4 4h16"
+        />
+      </svg>
+      <h3 className="text-blue-600 font-semibold text-xl">Proven Organic SEO</h3>
+    </div>
+    <h2 className="text-5xl font-extrabold">
+      Drive more organic traffic to your website.
+    </h2>
+    <p className="text-gray-700 text-lg leading-relaxed">
+      Get more qualified traffic on the search terms that matter most to your
+      business. We achieve measurable results by working on every variable that
+      impacts SERPs. Trust our proven track record to maximize your visibility
+      online. Set your business up for long-term success.
+    </p>
+    <p className="text-green-700 font-extrabold text-5xl mt-6">
+      200% 
+      <span className="text-gray-700 text-2xl font-normal ml-2">
+        Most of our SEO campaigns double their traffic within 6 months
+      </span>
+    </p>
+  </div>
+
+  {/* Right Section */}
+  <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+    <img
+      src="/mnt/data/image.png"
+      alt="SEO Analytics"
+      className="rounded-lg shadow-2xl w-full md:w-[90%] h-auto"
+    />
+  </div>
+</div>
+
 
 
 
