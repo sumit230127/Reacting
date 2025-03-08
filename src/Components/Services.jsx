@@ -15,7 +15,7 @@ import Whychooseus from "../Images/Whychooseus.jpeg";
 import Webdevelopment from "../Images/webdevelopment.jpeg";
 import logo from "../Images/logo.jpeg"; // Replace with actual logo path
 import Footer from "../Components/Footer"; // Importing Footer
-
+import SEOANALYSIS from "../Images/SEOANALYSIS.jpeg";
 
 const Service = () => {
   const services = [
@@ -203,12 +203,13 @@ const Service = () => {
   </div>
 </div>
 
-<div className="flex flex-col md:flex-row items-center justify-between bg-white p-12 min-h-[600px]">
+<div className="flex flex-col md:flex-row items-center justify-between bg-white p-16 min-h-[700px]">
   {/* Left Section */}
-  <div className="md:w-1/2 text-left space-y-6">
-    <div className="flex items-center space-x-3">
+  <div className="md:w-1/2 text-left space-y-8">
+    {/* Heading with Icon */}
+    <div className="flex items-center gap-4">
       <svg
-        className="w-8 h-8 text-blue-600"
+        className="w-12 h-12 text-blue-600"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -221,34 +222,41 @@ const Service = () => {
           d="M8 16l-4-4m0 0l4-4m-4 4h16"
         />
       </svg>
-      <h3 className="text-blue-600 font-semibold text-xl">Proven Organic SEO</h3>
+      <h3 className="text-blue-600 font-semibold text-2xl">Proven Organic SEO</h3>
     </div>
-    <h2 className="text-5xl font-extrabold">
+
+    {/* Main Title */}
+    <h2 className="text-5xl font-extrabold leading-tight">
       Drive more organic traffic to your website.
     </h2>
-    <p className="text-gray-700 text-lg leading-relaxed">
+
+    {/* Description */}
+    <p className="text-gray-700 text-xl leading-relaxed">
       Get more qualified traffic on the search terms that matter most to your
       business. We achieve measurable results by working on every variable that
       impacts SERPs. Trust our proven track record to maximize your visibility
       online. Set your business up for long-term success.
     </p>
-    <p className="text-green-700 font-extrabold text-5xl mt-6">
+
+    {/* Statistics */}
+    <p className="text-green-700 font-extrabold text-6xl mt-8">
       200% 
-      <span className="text-gray-700 text-2xl font-normal ml-2">
+      <span className="text-gray-700 text-3xl font-normal ml-2">
         Most of our SEO campaigns double their traffic within 6 months
       </span>
     </p>
   </div>
 
-  {/* Right Section */}
-  <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+  {/* Right Section - Image */}
+  <div className="md:w-1/2 flex justify-center mt-12 md:mt-0">
     <img
-      src="/mnt/data/image.png"
+      src="SEOANALYSIS.jpeg"
       alt="SEO Analytics"
-      className="rounded-lg shadow-2xl w-full md:w-[90%] h-auto"
+      className="rounded-lg shadow-2xl w-full md:w-[95%] h-auto"
     />
   </div>
 </div>
+
 
 
 
