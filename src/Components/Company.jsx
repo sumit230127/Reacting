@@ -1,9 +1,10 @@
 import React from "react";
+import jumpingpeople from '../Images/'
 
 export default function HeroSection() {
   return (
     <div className="relative w-full h-screen flex items-center justify-center bg-cover bg-center text-white" style={{
-      backgroundImage: "url('/path-to-your-image.png')",
+      backgroundImage: "url('')",
       backgroundColor: "#003366",
       backgroundBlendMode: "multiply"
     }}>
