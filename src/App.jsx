@@ -7,6 +7,7 @@ import Story from './Components/Story';
 import Getintouch from './Components/Getintouch';
 import TeamSection from './Components/Teamsection';
 import Services from './Components/Services';
+import CompanyPage from './Components/Company'; // Import CompanyPage
 import Footer from './Components/Footer';
 
 import './index.css';
@@ -31,7 +32,8 @@ const App = () => {
               </>
             } 
           />
-          <Route path="/services" element={<Services />} /> {/* ✅ Fixed path */}
+          <Route path="/services" element={<Services />} /> 
+          <Route path="/company" element={<CompanyPage />} /> {/* ✅ Added CompanyPage */}
         </Routes>
       </div>
     </Router>
