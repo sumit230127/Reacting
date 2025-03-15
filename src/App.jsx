@@ -10,7 +10,8 @@ import Services from "./Components/Services";
 import CompanyPage from "./Components/Company"; // Import CompanyPage
 import Footer from "./Components/Footer";
 import Clients from "./Components/Clients"; // ✅ Import Clients (capitalized)
-import Contact from "../Components/Contact"; // Import Contact
+import Contact from "./Components/Contact"; // Import Contact
+
 
 import "./index.css";
 
