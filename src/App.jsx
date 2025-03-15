@@ -10,6 +10,7 @@ import Services from "./Components/Services";
 import CompanyPage from "./Components/Company"; // Import CompanyPage
 import Footer from "./Components/Footer";
 import Clients from "./Components/Clients"; // ✅ Import Clients (capitalized)
+import Contact from "../Components/Contact"; // Import Contact
 
 import "./index.css";
 
@@ -36,6 +37,7 @@ const App = () => {
           />
           <Route path="/services" element={<Services />} />
           <Route path="/company" element={<CompanyPage />} />
+          <Route path="/contact" element={<Contact />} /> {/* Add Contact Route */}
         </Routes>
       </div>
     </Router>
