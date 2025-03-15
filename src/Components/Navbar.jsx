@@ -8,14 +8,14 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white py-4 px-6 fixed top-0 left-0 w-full z-50 shadow-lg">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        {/* Logo Section */}
-        <div className="flex items-center">
+        {/* ✅ Clickable Logo */}
+        <Link to="/" className="flex items-center">
           <img
             src="https://sitesence.com/wp-content/uploads/2019/07/LogoMakr_0GCWfD.png"
             alt="Logo"
             className="h-10"
           />
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8 text-lg">

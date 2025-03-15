@@ -1,26 +1,27 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
-import Navbar from './Components/Navbar';
-import HeroSection from './Components/Herosection';
-import Marketingpage from './Components/Marketingpage'; 
-import Story from './Components/Story';
-import Getintouch from './Components/Getintouch';
-import TeamSection from './Components/Teamsection';
-import Services from './Components/Services';
-import CompanyPage from './Components/Company'; // Import CompanyPage
-import Footer from './Components/Footer';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import HeroSection from "./Components/Herosection";
+import Marketingpage from "./Components/Marketingpage";
+import Story from "./Components/Story";
+import Getintouch from "./Components/Getintouch";
+import TeamSection from "./Components/Teamsection";
+import Services from "./Components/Services";
+import CompanyPage from "./Components/Company"; // Import CompanyPage
+import Footer from "./Components/Footer";
+import Clients from "./Components/Clients"; // ✅ Import Clients (capitalized)
 
-import './index.css';
+import "./index.css";
 
 const App = () => {
   return (
-    <Router> 
+    <Router>
       <Navbar />
       <div className="w-full">
         <Routes>
           {/* Homepage Route */}
-          <Route 
-            path="/" 
+          <Route
+            path="/"
             element={
               <>
                 <HeroSection />
@@ -28,12 +29,13 @@ const App = () => {
                 <Story />
                 <Getintouch />
                 <TeamSection />
+                <Clients /> {/* ✅ Added Clients above Footer */}
                 <Footer />
               </>
-            } 
+            }
           />
-          <Route path="/services" element={<Services />} /> 
-          <Route path="/company" element={<CompanyPage />} /> {/* ✅ Added CompanyPage */}
+          <Route path="/services" element={<Services />} />
+          <Route path="/company" element={<CompanyPage />} />
         </Routes>
       </div>
     </Router>
