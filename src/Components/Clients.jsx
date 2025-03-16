@@ -17,7 +17,7 @@ const categories = [
 
 const generateDummyCards = (category) => {
   return Array.from({ length: 10 }, (_, i) => ({
-    name: `User ${i + 1}`,
+    name: `User  ${i + 1}`,
     company: `${category} Company ${i + 1}`,
     review: "This service was outstanding!",
     description:
@@ -47,7 +47,7 @@ const CustomButton = ({ isActive, onClick, children }) => (
 );
 
 const CustomCard = ({ name, company, review, description, image, companyLogo, backgroundImage }) => (
-  <div className="min-w-[300px] max-w-sm rounded-2xl overflow-hidden shadow-lg border border-gray-200 relative mx-2 bg-white">
+  <div className="min-w-[250px] max-w-sm rounded-2xl overflow-hidden shadow-lg border border-gray-200 relative mx-2 bg-white">
     <div className="h-32 w-full bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
     <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-24 h-24 border-4 border-white rounded-full overflow-hidden bg-white">
       <img src={image} alt={name} className="w-full h-full object-cover" />
@@ -102,8 +102,8 @@ export default function Testimonials() {
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 }, 
-          1536: { slidesPerView: 5 }, 
+          1024: { slidesPerView: 3 }, 
+          1536: { slidesPerView: 4 }, 
         }}
         navigation
         pagination={{ clickable: true }}

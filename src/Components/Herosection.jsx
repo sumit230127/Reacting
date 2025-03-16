@@ -37,7 +37,7 @@ const HeroSection = () => {
           ))}
         </motion.h1>
         <motion.h2 
-          className="text-4xl sm:text-5xl md:text-6xl font-bold mt-2"
+          className="text-4xl sm:text-5xl md:text-6xl mb-60 font-bold mt-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -73,11 +73,11 @@ const HeroSection = () => {
       </div>
 
       {/* Form */}
-      <div className="bg-black bg-opacity-70 p-4 rounded-lg flex flex-col space-y-4 mt-8 z-10 w-full max-w-md mx-auto">
+      <div className="bg-black bg-opacity-70 p-6 rounded-lg flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8 z-10  w-4xl mx-auto">
         <input type="text" placeholder="Full Name" className="p-2 bg-transparent border rounded-md text-white placeholder-gray-400 w-full" />
         <input type="email" placeholder="Email Address" className="p-2 bg-transparent border rounded-md text-white placeholder-gray-400 w-full" />
         <input type="text" placeholder="Phone Number" className="p-2 bg-transparent border rounded-md text-white placeholder-gray-400 w-full" />
-        <button className="bg-yellow-500 text-black px-4 py-2 rounded-md w-full">Get Started</button>
+        <button className="bg-yellow-500 text-black px-4 py-2 rounded-md w-full md:w-auto">Get Started</button>
       </div>
 
       <div className="flex flex-wrap justify-center space-x-4 mt-8 z-10 w-full max-w-4xl">

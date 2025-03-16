@@ -34,16 +34,16 @@ export default function OurWork() {
 
   return (
     <div className="max-w-7xl mx-auto mt-10 px-4 py-8 lg:flex gap-6">
-      {/* Mobile Toggle for Services */}
+      
       <button
         className="lg:hidden flex items-center gap-2 p-3 bg-gray-200 rounded-lg mb-4"
         onClick={() => setShowServices(!showServices)}
       >
         <Menu className="w-5 h-5" />
-        <span>Toggle Services</span>
+        <span>Filter</span>
       </button>
 
-      {/* Services Sidebar */}
+
       <div
         className={`lg:w-1/4 ${showServices ? "block" : "hidden"} lg:block bg-white p-4 rounded-lg shadow-md fixed lg:sticky lg:top-10 lg:h-[calc(100vh-2.5rem)]`}
       >
@@ -61,7 +61,7 @@ export default function OurWork() {
         </div>
       </div>
 
-      {/* Projects Section */}
+      
       <div className="lg:w-3/4 w-full space-y-6 lg:ml-1/4">
         <h2 className="text-3xl font-bold">Our Work</h2>
         <p className="text-gray-600">Explore the best in PPC, SEO, and Web Design.</p>
