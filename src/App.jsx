@@ -7,12 +7,11 @@ import Story from "./Components/Story";
 import Getintouch from "./Components/Getintouch";
 import TeamSection from "./Components/Teamsection";
 import Services from "./Components/Services";
-import CompanyPage from "./Components/Company"; // Import CompanyPage
+import CompanyPage from "./Components/Company"; 
 import Footer from "./Components/Footer";
-import Clients from "./Components/Clients"; // ✅ Import Clients (capitalized)
+// import Clients from "./Components/Clients"; 
 import Contact from "./Components/Contact";
-import Ourwork from "./Components/Ourwork"; // Ensure this matches the file name
-
+import Ourwork from "./Components/Ourwork"; 
 import "./index.css";
 
 const App = () => {
@@ -21,7 +20,7 @@ const App = () => {
       <Navbar />
       <div className="w-full">
         <Routes>
-          {/* Homepage Route */}
+          
           <Route
             path="/"
             element={
@@ -31,15 +30,15 @@ const App = () => {
                 <Story />
                 <Getintouch />
                 <TeamSection />
-                <Clients /> {/* ✅ Added Clients above Footer */}
+                {/* <Clients />  */}
                 <Footer />
               </>
             }
           />
           <Route path="/services" element={<Services />} />
           <Route path="/company" element={<CompanyPage />} />
-          <Route path="/contact" element={<Contact />} /> {/* Contact Route */}
-          <Route path="/our-work" element={<Ourwork />} /> {/* ✅ Fixed Ourwork Route */}
+          <Route path="/contact" element={<Contact />} /> 
+          <Route path="/our-work" element={<Ourwork />} /> 
         </Routes>
       </div>
     </Router>
