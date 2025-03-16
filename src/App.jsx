@@ -11,7 +11,7 @@ import CompanyPage from "./Components/Company"; // Import CompanyPage
 import Footer from "./Components/Footer";
 import Clients from "./Components/Clients"; // ✅ Import Clients (capitalized)
 import Contact from "./Components/Contact";
-
+import Ourwork from "./Components/Ourwork"; // Ensure this matches the file name
 
 import "./index.css";
 
@@ -38,7 +38,8 @@ const App = () => {
           />
           <Route path="/services" element={<Services />} />
           <Route path="/company" element={<CompanyPage />} />
-          <Route path="/contact" element={<Contact />} /> {/* Add Contact Route */}
+          <Route path="/contact" element={<Contact />} /> {/* Contact Route */}
+          <Route path="/our-work" element={<Ourwork />} /> {/* ✅ Fixed Ourwork Route */}
         </Routes>
       </div>
     </Router>
