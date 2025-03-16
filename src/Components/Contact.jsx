@@ -1,6 +1,6 @@
 import React from "react";
 import contact_banner from "../Images/contact_banner.webp";
-import Footer from "../components/Footer";
+import Footer from "../Components/Footer";
 
 const Contact = () => {
   return (
@@ -77,7 +77,7 @@ const Contact = () => {
               className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300"
               rows="4"
             ></textarea>
-            <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+            <button className="w-full bg-blue-600 text-black py-3 rounded-lg hover:bg-blue-700">
               Send Message
             </button>
           </form>
