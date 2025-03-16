@@ -1,13 +1,18 @@
 import React from "react";
+import contact_banner from "../Images/contact_banner.webp";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
-    <div className="w-full bg-gray-100 py-12 px-4">
-      {/* Hero Section with Placeholder Image */}
-      <div className="w-screen h-64 bg-gray-300 flex items-center justify-center text-gray-700 text-2xl font-bold">
-  [ Your Image Here ]
-</div>
-
+    <div className="w-full bg-gray-100 mt-6 py-12 px-4">
+      {/* Hero Section with Image */}
+      <div className="w-screen h-64">
+        <img
+          src={contact_banner}
+          alt="Contact Banner"
+          className="w-full h-full object-cover"
+        />
+      </div>
 
       {/* Contact Section */}
       <div className="container mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -79,14 +84,8 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Add New Section Below */}
-      <div className="container mx-auto mt-12 bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold text-blue-600">Additional Section</h2>
-        <p className="text-gray-700 mt-2">
-          This section will be added below the contact form. You can customize
-          this content as needed.
-        </p>
-      </div>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
